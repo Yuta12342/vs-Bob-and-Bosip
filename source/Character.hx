@@ -540,7 +540,7 @@ class Character extends FlxSprite
 				frames = tex;
 
 				trace(tex.frames.length);
-				
+
 				animation.addByPrefix('idle', 'bob_idle', 24, false);
 				animation.addByPrefix('singUP', 'bob_UP', 24, false);
 				animation.addByPrefix('singLEFT', 'bob_LEFT', 24, false);
@@ -916,7 +916,7 @@ class Character extends FlxSprite
 
 				addOffset('danceLeft');
 				addOffset('danceRight');
-				
+
 				addOffset("singUP", 93, 41);
 				addOffset("singRIGHT", -74, -23);
 				addOffset("singLEFT", 122, -74);
@@ -1036,7 +1036,7 @@ class Character extends FlxSprite
 				addOffset("singUP", -20, -50);
 				addOffset("singRIGHT", -30, -50);
 				addOffset("singLEFT", 600, 220);
-				
+
 				playAnim('idle');
 			case 'bf-worriedbob':
 				noteSkin = 'bob';
@@ -1073,10 +1073,94 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
+				case 'bf-gin':
+					noteSkin = 'gin';
+					var tex = Paths.getSparrowAtlas('characters/BOYFRIEND', 'shared');
+					frames = tex;
+
+					trace(tex.frames.length);
+
+					animation.addByPrefix('idle', 'BF idle dance', 24, false);
+					animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+					animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+					animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+					animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+					animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+					animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+					animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+					animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+					animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+					animation.addByPrefix('firstDeath', "BF dies", 24, false);
+					animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+					animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+					animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+					addOffset('idle', -5);
+					addOffset("singUP", -29, 27);
+					addOffset("singRIGHT", -38, -7);
+					addOffset("singLEFT", 12, -6);
+					addOffset("singDOWN", -10, -50);
+					addOffset("singUPmiss", -29, 27);
+					addOffset("singRIGHTmiss", -30, 21);
+					addOffset("singLEFTmiss", 12, 24);
+					addOffset("singDOWNmiss", -11, -19);
+					addOffset("hey", 7, 4);
+					addOffset('firstDeath', 37, 11);
+					addOffset('deathLoop', 37, 5);
+					addOffset('deathConfirm', 37, 69);
+					addOffset('scared', -4);
+
+					playAnim('idle');
+
+					flipX = true;
+					case 'bobgin':
+						noteSkin = 'gin';
+						var tex = Paths.getSparrowAtlas('characters/BOYFRIEND', 'shared');
+						frames = tex;
+
+						trace(tex.frames.length);
+
+						animation.addByPrefix('idle', 'BF idle dance', 24, false);
+						animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+						animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+						animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+						animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+						animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+						animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+						animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+						animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+						animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+						animation.addByPrefix('firstDeath', "BF dies", 24, false);
+						animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+						animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+						animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+						addOffset('idle', -5);
+						addOffset("singUP", -29, 27);
+						addOffset("singRIGHT", -38, -7);
+						addOffset("singLEFT", 12, -6);
+						addOffset("singDOWN", -10, -50);
+						addOffset("singUPmiss", -29, 27);
+						addOffset("singRIGHTmiss", -30, 21);
+						addOffset("singLEFTmiss", 12, 24);
+						addOffset("singDOWNmiss", -11, -19);
+						addOffset("hey", 7, 4);
+						addOffset('firstDeath', 37, 11);
+						addOffset('deathLoop', 37, 5);
+						addOffset('deathConfirm', 37, 69);
+						addOffset('scared', -4);
+
+						playAnim('idle');
+
+						flipX = true;
 			case 'deadron':
 				frames = Paths.getSparrowAtlas('sunset/happy/RON_dies_lmaoripbozo_packwatch', 'shared');
 				animation.addByIndices('idle', 'rip my boy ron', [57], '', 24, false);
-				
+
 				addOffset('idle');
 
 				playAnim('idle');
