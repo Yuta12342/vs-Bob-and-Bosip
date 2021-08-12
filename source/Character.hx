@@ -1116,6 +1116,7 @@ class Character extends FlxSprite
 
 					flipX = true;
 					case 'bobgin':
+				  iconColor = 'FFFFFFFF';
 						noteSkin = 'gin';
 						var tex = Paths.getSparrowAtlas('characters/BOBGIN', 'shared');
 						frames = tex;

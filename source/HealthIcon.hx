@@ -131,6 +131,7 @@ class HealthIcon extends FlxSprite
 				animation.add('pc', [24, 25, 26], 0, false, isPlayer);
 				animation.add('cj', [24, 25, 26], 0, false, isPlayer);
 				animation.add('bobal', [24, 25, 26], 0, false, isPlayer);
+				animation.add('BOBGIN', [36, 37, 36], 0, false, isPlayer);
 
 
 				switch(char)
