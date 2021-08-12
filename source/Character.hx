@@ -418,7 +418,7 @@ class Character extends FlxSprite
 
 				flipX = true;
 			case 'bf-ex':
-				iconColor = 'FF0EAEFE';
+				iconColor = 'FF0EAEF';
 				noteSkin = 'bf';
 				var tex = Paths.getSparrowAtlas('characters/extra/BoyFriend_Assets_EX', 'shared');
 				frames = tex;
@@ -1117,7 +1117,7 @@ class Character extends FlxSprite
 					flipX = true;
 					case 'bobgin':
 						noteSkin = 'gin';
-						var tex = Paths.getSparrowAtlas('characters/BOYFRIEND', 'shared');
+						var tex = Paths.getSparrowAtlas('characters/BOBGIN', 'shared');
 						frames = tex;
 
 						trace(tex.frames.length);

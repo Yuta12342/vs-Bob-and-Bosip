@@ -94,8 +94,8 @@ class HealthIcon extends FlxSprite
 			default:
 				loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 
-				
-				animation.add('bf', [0, 1, 35], 0, false, isPlayer);
+
+				animation.add('bf', [0, 1, 0], 0, false, isPlayer);
 				animation.add('bf-ex', [0, 1, 35], 0, false, isPlayer);
 				animation.add('bf-night-ex', [0, 1, 35], 0, false, isPlayer);
 				animation.add('bf-night', [0, 1, 35], 0, false, isPlayer);
@@ -131,7 +131,7 @@ class HealthIcon extends FlxSprite
 				animation.add('pc', [24, 25, 26], 0, false, isPlayer);
 				animation.add('cj', [24, 25, 26], 0, false, isPlayer);
 				animation.add('bobal', [24, 25, 26], 0, false, isPlayer);
-				
+
 
 				switch(char)
 				{

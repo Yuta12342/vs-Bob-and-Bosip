@@ -33,7 +33,7 @@ class Main extends Sprite
 	public static function main():Void
 	{
 
-		// quick checks 
+		// quick checks
 
 		Lib.current.addChild(new Main());
 	}
@@ -83,9 +83,9 @@ class Main extends Sprite
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
 
 		addChild(game);
-		
+
 		var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
-			
+
 		#if web
 		var str1:String = "HTML CRAP";
 		var vHandler = new VideoHandler();
@@ -96,12 +96,12 @@ class Main extends Sprite
 		GlobalVideo.setVid(vHandler);
 		vHandler.source(ourSource);
 		#elseif desktop
-		var str1:String = "WEBM SHIT"; 
+		var str1:String = "WEBM SHIT";
 		var webmHandle = new WebmHandler();
 		webmHandle.source(ourSource);
 		webmHandle.makePlayer();
 		webmHandle.webm.name = str1;
-		WebmPlayer.SKIP_STEP_LIMIT = 90;
+		//WebmPlayer.SKIP_STEP_LIMIT = 90;
 		addChild(webmHandle.webm);
 		GlobalVideo.setWebm(webmHandle);
 		#end
