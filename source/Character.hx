@@ -1118,7 +1118,7 @@ class Character extends FlxSprite
 					case 'bobgin':
 				  iconColor = 'FFFFFFFF';
 						noteSkin = 'gin';
-						var tex = Paths.getSparrowAtlas('characters/gin');
+						var tex = Paths.getSparrowAtlas('characters/BOBGIN');
 							frames = tex;
 							animation.addByPrefix('idle', 'gin idle dance', 24, false);
 							animation.addByPrefix('singUP', 'gin NOTE UP0', 24, false);
